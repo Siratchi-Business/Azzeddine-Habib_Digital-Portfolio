@@ -1,0 +1,97 @@
+/* footer.css */
+
+/* Estilo general del footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la información de contacto */
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+/* Estilo de los iconos sociales */
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+footer .social-icons a:hover {
+    background-color: #ddd;
+}
+
+/* Estilo de los iconos sociales img */
+footer .social-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo del nav */
+footer nav {
+    display: flex;
+    gap: 20px;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilo del copyright */
+footer .copyright {
+    text-align: center;
+    flex-basis: 100%;
+    margin-top: 10px;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .contact-info, footer nav, footer .social-icons {
+        margin-bottom: 10px;
+    }
+
+    footer .copyright {
+        margin-top: 20px;
+    }
+}
